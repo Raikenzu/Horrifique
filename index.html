@@ -428,16 +428,3 @@ font-align: center;
 <br>
 <br>Coded by the Harlequin Family.</b></i>
 </div>
-
-
-<script>
-  document.addEventListener("click", function (event) {
-    if ( event.target.tagName.toLowerCase() === "a" ) {
-      var target = event.target.getAttribute("href");
-      if(target.startsWith("#")) {
-       window.location = "about:srcdoc"+target;
-       event.preventDefault();
-      }
-    }
-   }, false);
-</script>
